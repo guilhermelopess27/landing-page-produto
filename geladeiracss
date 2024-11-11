@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E3F2FD;
+}
+
+.menu-nav {
+    display: flex;
+    padding: 10px ;
+    background-color: #2196F3;
+    width: 100%;
+    gap: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgb(220, 216, 216);
+    margin-top: 20px;
+
+  }
+  
+  .menu-nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .menu-nav a:hover {
+    background-color: #0b7dda;
+    color: white;
+
+  }
+
+  .menu-nav1 {
+    display: flex;
+    background-color: #2196F3;
+    padding: 10px 0;
+    width:100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  
+  .menu-nav1 a {
+    color: white;
+    padding: 10px 15px ;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .menu-nav1 a:hover {
+    background-color: #0b7dda
+    
+  }
+
+
+.img{
+    width: 100%;
+    max-width: 600px;
+    align-self: flex-end;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas na imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+}
+
+.imagens-menores {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre as imagens menores */
+    align-items:flex-start;
+    justify-content: flex-start;
+    max-height: 400px; /* Limita a altura das imagens menores */
+}
+
+.imagem-menor {
+    width: 100px; /* Ajuste o tamanho das imagens menores */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para as imagens menores */
+    transition: transform 0.3s ease;
+}
+
+.imagem-menor:hover {
+    transform: scale(1.2); /* Faz a imagem crescer 20% quando o mouse passa por cima */
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bloco2{
+    width: 350px;
+    height: auto;
+    max-height: 400px;  /* Limita a altura do bloco */
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+    justify-content: flex-start;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+   
+}
+
+.bloco2 p{
+    font-size: 16px;
+    color: #555555; /* Cor do texto mais suave */
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-weight: 400;
+
+}
+
+.minhaimagem{
+    width: 100%;
+    height: auto;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    align-items: center;
+    margin-top: auto;
+}
+
+.btn input{
+    width: 100%;
+    max-width: 180px; /* Limita a largura máxima do botão */
+    height: 50px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; /* Bordas arredondadas nos botões */
+    transition: background-color 0.3s ease;
+
+
+}
+.logogo{
+    display: flex;
+    
+}
+.btn input:hover {
+    background-color: #555; /* Adiciona um efeito visual ao passar o mouse */
+    transform: scale(1.05);
+}
+
+h1{
+    text-align:start;
+    color: #333333; /* Cor de título suave */
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-bottom: 1px solid rgb(220, 216, 216);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Contêiner da barra de pesquisa */
+.search-container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    margin-left: 80px;
+}
+
+/* Estilização do formulário */
+.search-container form {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do campo de pesquisa */
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+/* Estilo do botão de pesquisa */
+.search-container button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #2196F3;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #1a7bcd;
+}
