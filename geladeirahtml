@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portifolio</title>
+
+    <div class="logogo">
+        <img src="img/electroluxlogo.png" class="logo" height="50px">
+
+        <!-- código da barra de pesquisa-->
+        <div class="search-container">
+            <form action="#">
+                <input type="text" placeholder="Digite sua pesquisa..." name="search">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+    
+    <section>
+        <nav class="menu-nav">
+          <a href="#">Início</a>
+          <a href="#">Sobre</a>
+          <a href="#">Serviços</a>
+          <a href="#">Contato</a>
+        </nav>
+      </section>
+      <h1>*Geladeira Electrolux Frost Free 500L </h1>
+</head>
+<body>
+   
+    <div class="container">
+
+        <div class="imagens-menores">
+            <img src="img/geladeira2.jfif" class="imagem-menor">
+            <img src="img/geladeira3.jfif" class="imagem-menor">
+            <img src="img/geladeira4.jfif" class="imagem-menor">
+        </div>
+        
+            <div class="img">
+                <img src="img/geladeira.jfif" class="minhaimagem">
+            </div>
+        
+        <div class="bloco2">
+            <section>
+                <nav class="menu-nav1">
+                  <a href="#">Sobre</a>
+                  <a href="#">Vantagens</a>
+                  <a href="#">Contato</a>
+                </nav>
+              </section>
+
+            <p>A Geladeira Electrolux Frost Free 500L é espaçosa, 
+                com design moderno em inox, prateleiras ajustáveis
+                 e gaveta para legumes com controle de umidade. 
+                 O sistema Frost Free dispensa descongelamento e 
+                 o painel externo facilita o ajuste de temperatura.
+            </p>
+
+            <div class="btn">
+                <input type="submit" value="Comprar agora">
+                <input type="submit" value="Adicionar à sacola">
+            </div>
+            
+        </div>  
+    </div>
+</body>
+</html>
