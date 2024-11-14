@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Exemplo</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link para o CSS externo -->
+    <style>
+        /* CSS Inline */
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #f7f9fc;
+            font-family: Arial, sans-serif;
+        }
+
+        .headcontainer {
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            height: auto;
+            padding: 20px;
+            align-items: center;
+        }
+
+        .menupesquisa {
+            display: flex;
+            gap: 20px;
+            align-self: center;
+            margin-top: 10px;
+            width: auto;
+        }
+
+        .menupesquisa a {
+            text-decoration: none;
+            text-transform: uppercase;
+            opacity: 0.5;
+            background-color: white;
+            padding: 15px;
+            border-radius: 20px;
+            color: black;
+            transition: transform 0.3s ease;
+        }
+
+        .menupesquisa a:hover {
+            transform: scale(1.2);
+        }
+
+        .icons {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .icons :hover {
+            transform: scale(1.2);
+        }
+
+        .pesquisa, .coracao, .carrinho {
+            width: 30px;
+            height: 30px;
+            background-color: gray;
+            border-radius: 50%;
+            padding: 5px;
+        }
+
+        .containerprincipal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            gap: 50px;
+        }
+
+        .botaopedido {
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            background-color: #11305f;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .botaopedido:hover {
+            transform: scale(1.2);
+            background-color: #5b80b8;
+        }
+
+        .conteudo h3 {
+            color: #17a1ab;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .conteudo h1 {
+            color: #11305f;
+            font-size: 60px;
+            margin: 5px 0;
+        }
+
+        .conteudo p {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .imagemprincipal {
+            width: 300px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+            transition: transform 0.5s ease; /* Transição suave para o efeito de zoom */
+        }
+
+        .imagemprincipal.zoom {
+            transform: scale(1.1); /* Efeito de zoom */
+        }
+
+        .containerpratos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: blue;
+            height: auto;
+        }
+
+        .pratos {
+            width: 70%;
+            display: flex;
+            height: 800px;
+            border: 1px solid red;
+            gap: 10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .pratos1, .pratos2 {
+            width: 90%;
+            height: 50%;
+            background-color: black;
+            display: flex;
+            gap: 20px;
+        }
+
+        .prato {
+            width: 33.33%;
+            height: 80%;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <div class="headcontainer">
+        <img src="img/icons8-cooking-64.png" alt="Logo">
+        <div class="menupesquisa">
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+        </div>
+        <div class="icons">
+            <img src="img/icons8-pesquisar-50.png" class="pesquisa" alt="Pesquisar">
+            <img src="img/icons8-gostar-48.png" class="coracao" alt="Gostar">
+            <img src="img/icons8-carrinho-de-compras-60.png" class="carrinho" alt="Carrinho">
+        </div>
+    </div>
+
+    <!-- Seção Principal -->
+    <div class="containerprincipal">
+        <div class="conteudo">
+            <h3>Especial da casa!</h3>
+            <h1>Frango assado</h1>
+            <p>O melhor da região, assado na brasa e com molho especial da casa <br>Venha conhecer!</p>
+            <button class="botaopedido">Faça seu pedido</button>
+        </div>
+        <div class="imagemprincipal">
+            <img src="img/frangoassado.jpg" class="imagemprincipal" alt="Frango Assado">
+        </div>
+    </div>
+
+    <!-- JavaScript Inline para animações -->
+    <script>
+        const imagemPrincipal = document.querySelector('.imagemprincipal img');
+
+        // Aplica o zoom ao passar o mouse
+        imagemPrincipal.addEventListener('mouseover', () => {
+            imagemPrincipal.classList.add('zoom');
+        });
+
+        // Remove o zoom ao tirar o mouse
+        imagemPrincipal.addEventListener('mouseout', () => {
+            imagemPrincipal.classList.remove('zoom');
+        });
+    </script>
+</body>
+</html>
