@@ -3,170 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Exemplo</title>
+    <title>Restaurante Risca Faca</title>
     <link rel="stylesheet" href="css/styles.css"> <!-- Link para o CSS externo -->
-    <style>
-        /* CSS Inline */
-        body {
-            margin: 0;
-            height: 100vh;
-            background-color: #f7f9fc;
-            font-family: Arial, sans-serif;
-        }
-
-        .headcontainer {
-            display: flex;
-            justify-content: space-around;
-            border-bottom: 1px solid #e0e0e0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            height: auto;
-            padding: 20px;
-            align-items: center;
-        }
-
-        .menupesquisa {
-            display: flex;
-            gap: 20px;
-            align-self: center;
-            margin-top: 10px;
-            width: auto;
-        }
-
-        .menupesquisa a {
-            text-decoration: none;
-            text-transform: uppercase;
-            opacity: 0.5;
-            background-color: white;
-            padding: 15px;
-            border-radius: 20px;
-            color: black;
-            transition: transform 0.3s ease;
-        }
-
-        .menupesquisa a:hover {
-            transform: scale(1.2);
-        }
-
-        .icons {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .icons :hover {
-            transform: scale(1.2);
-        }
-
-        .pesquisa, .coracao, .carrinho {
-            width: 30px;
-            height: 30px;
-            background-color: gray;
-            border-radius: 50%;
-            padding: 5px;
-        }
-
-        .containerprincipal {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: white;
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            gap: 50px;
-        }
-
-        .botaopedido {
-            padding: 10px;
-            border-radius: 8px;
-            border: none;
-            color: white;
-            background-color: #11305f;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-
-        .botaopedido:hover {
-            transform: scale(1.2);
-            background-color: #5b80b8;
-        }
-
-        .conteudo h3 {
-            color: #17a1ab;
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .conteudo h1 {
-            color: #11305f;
-            font-size: 60px;
-            margin: 5px 0;
-        }
-
-        .conteudo p {
-            color: #333;
-            font-size: 16px;
-            line-height: 1.5;
-            margin-bottom: 20px;
-        }
-
-        .imagemprincipal {
-            width: 300px;
-            height: auto;
-            border-radius: 50%;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            object-fit: cover;
-            transition: transform 0.5s ease; /* Transição suave para o efeito de zoom */
-        }
-
-        .imagemprincipal.zoom {
-            transform: scale(1.1); /* Efeito de zoom */
-        }
-
-        .containerpratos {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            background-color: blue;
-            height: auto;
-        }
-
-        .pratos {
-            width: 70%;
-            display: flex;
-            height: 800px;
-            border: 1px solid red;
-            gap: 10px;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            padding: 20px;
-        }
-
-        .pratos1, .pratos2 {
-            width: 90%;
-            height: 50%;
-            background-color: black;
-            display: flex;
-            gap: 20px;
-        }
-
-        .prato {
-            width: 33.33%;
-            height: 80%;
-            background-color: white;
-        }
-    </style>
 </head>
 <body>
     <!-- Cabeçalho -->
     <div class="headcontainer">
-        <img src="img/icons8-cooking-64.png" alt="Logo">
+        <button class="menu-button">|||</button>
+        <img src="img/icons8-cooking-64.png" >
         <div class="menupesquisa">
             <a href="#">Home</a>
             <a href="#">Sobre</a>
@@ -174,9 +18,9 @@
             <a href="#">Contato</a>
         </div>
         <div class="icons">
-            <img src="img/icons8-pesquisar-50.png" class="pesquisa" alt="Pesquisar">
-            <img src="img/icons8-gostar-48.png" class="coracao" alt="Gostar">
-            <img src="img/icons8-carrinho-de-compras-60.png" class="carrinho" alt="Carrinho">
+            <img src="img/icons8-pesquisar-50.png" class="pesquisa">
+            <img src="img/icons8-gostar-48.png" class="coracao">
+            <img src="img/icons8-carrinho-de-compras-60.png" class="carrinho">
         </div>
     </div>
 
@@ -185,27 +29,160 @@
         <div class="conteudo">
             <h3>Especial da casa!</h3>
             <h1>Frango assado</h1>
-            <p>O melhor da região, assado na brasa e com molho especial da casa <br>Venha conhecer!</p>
+            <p>O melhor da região, assado na brasa e com molho especial da casa <br>
+            Venha conhecer!</p>
             <button class="botaopedido">Faça seu pedido</button>
         </div>
         <div class="imagemprincipal">
-            <img src="img/frangoassado.jpg" class="imagemprincipal" alt="Frango Assado">
+            <img src="img/frangoassado.jpg" class="imagemprincipal">
         </div>
     </div>
 
-    <!-- JavaScript Inline para animações -->
-    <script>
-        const imagemPrincipal = document.querySelector('.imagemprincipal img');
+    <!-- Seção de Pratos -->
+    <div class="containerpratos">
+        <h3>Nossos Pratos</h3>
+        <h1>PRATOS POPULARES</h1>
+        
+        <div class="pratos">
 
-        // Aplica o zoom ao passar o mouse
-        imagemPrincipal.addEventListener('mouseover', () => {
-            imagemPrincipal.classList.add('zoom');
+                <div class="prato">
+                    <img src="img/pexels-abnerlobo-15128148.jpg" class="imagem-prato">
+                    <div class="overlay">
+                        <button class="botao-pequeno">❤</button>
+                        <button class="botao-pequeno">🔍</button>
+                        <button class="botao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="prato">
+                    <img src="img/pexels-huzaifabukhari-16845755.jpg" class="imagem-prato">
+                    <div class="overlay">
+                        <button class="botao-pequeno">❤</button>
+                        <button class="botao-pequeno">🔍</button>
+                        <button class="botao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="prato">
+                    <img src="img/pexels-italo-melo-881954-24713097 (1).jpg" class="imagem-prato">
+                    <div class="overlay">
+                        <button class="botao-pequeno">❤</button>
+                        <button class="botao-pequeno">🔍</button>
+                        <button class="botao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="prato">
+                    <img src="img/pexels-matvalina-17655887.jpg" class="imagem-prato">
+                    <div class="overlay">
+                        <button class="botao-pequeno">❤</button>
+                        <button class="botao-pequeno">🔍</button>
+                        <button class="botao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                    <div class="prato">
+                        <img src="img/pexels-nadin-sh-78971847-11806779 (1).jpg" class="imagem-prato">
+                        <div class="overlay">
+                            <button class="botao-pequeno">❤</button>
+                            <button class="botao-pequeno">🔍</button>
+                            <button class="botao-carrinho">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                        <div class="prato">
+                            <img src="img/pexels-nadin-sh-78971847-12814607.jpg" class="imagem-prato">
+                            <div class="overlay">
+                                <button class="botao-pequeno">❤</button>
+                                <button class="botao-pequeno">🔍</button>
+                                <button class="botao-carrinho">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+            </div>
+            </div>
+        
+
+        <div class="sobrenos">
+            <h3>Sobre Nos</h3>
+            <h1>Porque nos escolher</h1>
+
+            <div class="imagemcont">
+                <div class="imagem27">
+                    <img src="img/pexels-anna-guerrero-788383-4079520.jpg" class="imagem2" >
+                </div>
+
+                <div class="paragrafo">
+                    <h1>Melhor Comida do país</h1>
+                    <p>Escolher nosso restaurante é optar por uma experiência única que vai além de uma refeição. Cada prato é preparado com ingredientes frescos e selecionados, garantindo o máximo sabor e qualidade em cada detalhe. Nosso ambiente acolhedor combina elegância e conforto, perfeito tanto para encontros especiais quanto para momentos descontraídos. O atendimento atencioso e personalizado faz com que você se sinta em casa, mas com o charme de estar em um lugar exclusivo. Aqui, sua satisfação não é apenas uma meta, é nossa paixão.</p>
+                
+                    <div class="caixinhas">
+                    <div class="caixinha1">
+                        <img src="img/icons8-caminhão-40.png" class="Delieveryicon">
+                        <p>Delievery grátis</p>
+                    </div>
+
+                    <div class="caixinha2">
+                        <img src="img/icons8-cifrão-48.png" class="cifraoicon">
+                        <p>Formas de pagamento</p>
+                    </div>
+
+                    <div class="caixinha3">
+                        <img src="img/icons8-fone-de-ouvido-40.png" class="foneicon">
+                        <p>serviço 24/7</p>
+                    </div>
+                </div>
+
+                <button class="saibamais">Saiba mais</button>
+                </div>
+            </div>
+            <button id="botaoTopo" class="botao-voltar-topo" title="Voltar ao topo">↑</button>
+                </div>
+
+                <script>
+                    // Seleciona a imagem principal
+                    const imagemPrincipal = document.querySelector('.imagemprincipal img');
+                
+                    // Aplica o efeito de zoom ao passar o mouse
+                    imagemPrincipal.addEventListener('mouseover', () => {
+                        imagemPrincipal.style.transform = 'scale(1.1)'; // Aplica o zoom
+                    });
+                
+                    // Remove o efeito de zoom ao tirar o mouse
+                    imagemPrincipal.addEventListener('mouseout', () => {
+                        imagemPrincipal.style.transform = 'scale(1)'; // Retorna ao tamanho original
+                    });
+                
+                    // Seleciona a segunda imagem (classe .imagem2)
+                    const imagem2 = document.querySelector('.imagem2');
+                
+                    // Aplica o efeito de zoom ao passar o mouse
+                    imagem2.addEventListener('mouseover', () => {
+                        imagem2.style.transform = 'scale(1.1)'; // Aplica o zoom
+                    });
+                
+                    // Remove o efeito de zoom ao tirar o mouse
+                    imagem2.addEventListener('mouseout', () => {
+                        imagem2.style.transform = 'scale(1)'; // Retorna ao tamanho original
+                    });
+
+                    const botaoTopo = document.getElementById('botaoTopo');
+
+        // Mostra o botão quando o usuário rola a página
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                botaoTopo.classList.add('mostrar');
+            } else {
+                botaoTopo.classList.remove('mostrar');
+            }
         });
 
-        // Remove o zoom ao tirar o mouse
-        imagemPrincipal.addEventListener('mouseout', () => {
-            imagemPrincipal.classList.remove('zoom');
+        // Rola suavemente até o topo quando o botão é clicado
+        botaoTopo.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
-    </script>
-</body>
+                </script>
+    </body>
 </html>
